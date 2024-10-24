@@ -1,13 +1,15 @@
-
-import React from 'react';
+// import React from 'react';
 import './Footer.css';
 
 function Footer() {
   return (
     <footer className="footer" id="contact">
-      <p>© {new Date().getFullYear()} Hospital General La Madrid. Todos los derechos reservados.</p>
-      <p>Contacto: salud@lamadrid.gob.ar | Tel: 02286 420054</p>
-      <p>Dirección: San Martin 565, General La Madrid, Provincia de Buenos Aires, Argentina</p>
+      <div className="contact-info">
+        <p><i className="fas fa-envelope"></i>Contacto: <a href="mailto:salud@lamadrid.gob.ar">salud@lamadrid.gob.ar</a></p>
+        <p><i className="fas fa-phone"></i>Tel: <a href="02286420054">02286 420054</a></p>
+        <p><i className="fas fa-map-marker-alt"></i>Dirección: San Martin 565, General La Madrid, Buenos Aires, Argentina</p>
+      </div>
+      <p className="copyright">© {new Date().getFullYear()} Hospital General La Madrid.</p>
     </footer>
   );
 }

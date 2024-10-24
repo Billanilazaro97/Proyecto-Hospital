@@ -33,10 +33,10 @@ function AppointmentForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar los datos a un servidor
+    
     console.log('Datos del formulario:', formData);
     setSubmitted(true);
-    // Reiniciar el formulario
+    
     setFormData({
       nombre: '',
       email: '',
